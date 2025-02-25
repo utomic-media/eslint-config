@@ -18,7 +18,7 @@
     "build": "tsup",
     "postinstall": "pnpm build",
     "dev:inspector": "npx @eslint/config-inspector --config eslint.config.mjs",
-    "dev": "pnpm dev"
+    "dev": "pnpm run dev:inspector && tsup --watch"
   },
   "keywords": [
     "eslint",
