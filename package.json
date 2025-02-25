@@ -1,0 +1,44 @@
+{
+  "name": "@utomic-media/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ESLint configurations for Utomic Media projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./base": "./dist/configs/base.js",
+    "./typescript": "./dist/configs/typescript.js",
+    "./vue": "./dist/configs/vue.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Utomic Media",
+  "license": "MIT",
+  "dependencies": {
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^4.0.1",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.25.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "eslint": "^9.21.0",
+    "typescript": "^5.7.3"
+  }
+}
