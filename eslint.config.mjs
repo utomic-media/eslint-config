@@ -1,4 +1,4 @@
-import { config } from './src/index';
+import { config } from '@utomic-media/eslint-config';
 
 // Here we're importing our own configuration
 // This file is used for development and testing purposes
