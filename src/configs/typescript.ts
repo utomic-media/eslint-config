@@ -7,6 +7,8 @@ const typescriptConfig: ESLintConfig = [
     name: 'utomic-media/typescript',
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
+      // emulate the TypeScript style of exempting unused variables with an underscore
+      // @see https://typescript-eslint.io/rules/no-unused-vars/
       '@typescript-eslint/no-unused-vars': [
         'error',
         {

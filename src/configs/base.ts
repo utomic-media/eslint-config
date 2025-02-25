@@ -28,10 +28,13 @@ const baseConfig: ESLintConfig = [
         {
           blankLine: 'always',
           prev: [
+            // 'block',
+            // 'block-like',
             'cjs-export',
             'class',
             'export',
             'import',
+            // 'multiline-block-like',
             'multiline-const',
             'multiline-expression',
             'multiline-let',
