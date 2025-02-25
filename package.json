@@ -23,7 +23,8 @@
     "build": "tsup",
     "postinstall": "pnpm build",
     "dev:inspector": "npx @eslint/config-inspector --config eslint.config.mjs",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "eslint",
