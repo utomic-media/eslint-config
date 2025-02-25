@@ -46,10 +46,15 @@ export default [
 
 ## Development
 
+Start the dev build:
+```bash
+pnpm dev
+```
+
 Inspect the ESLint configurations:
 
 ```bash
-pnpm dev
+pnpm dev:inspector
 ```
 
 This runs the ESLint config inspector to help visualize and debug the configuration.
