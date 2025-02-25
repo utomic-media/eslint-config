@@ -8,4 +8,7 @@ export default [
   ...config.base,
   ...config.typescript,
   ...config.vue,
+  {
+    ignore: ["**/dist/"], // Only needed in this dev-project, as the config reads itself and doesn't excludes itself
+  }
 ];
