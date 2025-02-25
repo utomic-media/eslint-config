@@ -4,10 +4,26 @@ import vueConfig from './configs/vue';
 import type { ESLintConfig } from './types';
 
 
-const config: Record<string, ESLintConfig> = {
+export const config: Record<string, ESLintConfig> = {
   base: baseConfig,
   typescript: typescriptConfig,
   vue: vueConfig,
 };
 
-export default config;
+export const presets = {
+  javascript: [
+    ...baseConfig
+  ],
+
+  typescript: [
+    ...baseConfig,
+    ...typescriptConfig
+  ],
+
+  vue: [
+    ...baseConfig,
+    ...typescriptConfig,
+    ...vueConfig
+  ],
+};
+

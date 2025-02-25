@@ -1,20 +1,22 @@
 import globals from 'globals';
-import pluginJs from '@eslint/js';
+import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import pluginImport from 'eslint-plugin-import-x';
 import type { ESLintConfig } from '../types';
 
 const baseConfig: ESLintConfig = [
   {
+    name: 'eslint/recommended',
+    ...eslint.configs.recommended,
+  },
+  {
+    name: 'utomic-media/base',
     languageOptions: {
       globals: {
         ...globals.browser,
         ...globals.node,
       },
     },
-  },
-  pluginJs.configs.recommended,
-  {
     plugins: {
       '@stylistic': stylistic,
       import: pluginImport as any, // Plugin type isn't fully compatible with the new FlatConfig type, but plugin is!
@@ -63,10 +65,8 @@ const baseConfig: ESLintConfig = [
       ],
       'import/newline-after-import': ['error', { count: 1, considerComments: true }],
     },
-  },
-  {
     ignores: ['node_modules', '**/dist', 'build'],
-  },
+  }
 ];
 
 export default baseConfig;

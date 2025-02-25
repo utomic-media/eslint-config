@@ -1,11 +1,10 @@
 import tseslint from 'typescript-eslint';
-import baseConfig from './base';
 import type { ESLintConfig } from '../types';
 
 const typescriptConfig: ESLintConfig = [
-  ...baseConfig,
-  ...tseslint.configs.recommended as any, // Config type isn't fully compatible with the new FlatConfig type, but plugin is!
+  ...tseslint.configs.recommended as any, // Config is typed as old config, but compatible with new FlatFile config
   {
+    name: 'utomic-media/typescript',
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-vars': [
@@ -29,8 +28,6 @@ const typescriptConfig: ESLintConfig = [
       ],
       '@typescript-eslint/no-import-type-side-effects': 'error',
     },
-  },
-  {
     ignores: ['**/shims.d.ts'],
   },
 ];

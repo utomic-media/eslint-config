@@ -1,10 +1,12 @@
 import pluginVue from 'eslint-plugin-vue';
-import typescriptConfig from './typescript';
+
 import type { ESLintConfig } from '../types';
 
 const vueConfig: ESLintConfig = [
-  ...typescriptConfig,
   ...pluginVue.configs['flat/essential'],
+  {
+    name: 'utomic-media/vue',
+  }
 ];
 
 export default vueConfig;

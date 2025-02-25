@@ -1,0 +1,11 @@
+import { config } from './src/index';
+
+// Here we're importing our own configuration
+// This file is used for development and testing purposes
+// with the config-inspector tool
+
+export default [
+  ...config.base,
+  ...config.typescript,
+  ...config.vue
+];

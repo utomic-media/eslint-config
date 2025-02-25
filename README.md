@@ -5,14 +5,7 @@ ESLint configurations for Utomic Media projects.
 ## Installation
 
 ```bash
-# npm
-npm install --save-dev @utomic-media/eslint-config
-
-# yarn
-yarn add --dev @utomic-media/eslint-config
-
-# pnpm
-pnpm add -D @utomic-media/eslint-config
+pnpm i -D @utomic-media/eslint-config
 ```
 
 ## Usage
@@ -76,6 +69,16 @@ export default [
 - ESLint 8.56.0+
 - Node.js 18+
 - TypeScript 5.0+ (for TypeScript configuration)
+
+## Development
+
+Inspect the ESLint configurations:
+
+```bash
+pnpm dev
+```
+
+This runs the ESLint config inspector to help visualize and debug the configuration.
 
 ## License
 
