@@ -11,19 +11,19 @@ export const config: Record<string, ESLintConfig> = {
 };
 
 export const presets = {
-  javascript: [
+  base: [
     ...baseConfig
   ],
 
   typescript: [
     ...baseConfig,
-    ...typescriptConfig
+    ...typescriptConfig,
   ],
 
   vue: [
     ...baseConfig,
     ...typescriptConfig,
-    ...vueConfig
+    ...vueConfig,
   ],
 };
 
