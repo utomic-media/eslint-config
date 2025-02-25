@@ -50,6 +50,6 @@ jobs:
           generateReleaseNotes: true
 
       - name: Add release to npm 💾 
-        run: pnpm publish --no-git-checks # --no-git-checks as we're not on a branch but a tag!
+        run: pnpm publish --no-git-checks --access public # --no-git-checks as we're not on a branch but a tag!, --access public, as it's a org-scoped package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
