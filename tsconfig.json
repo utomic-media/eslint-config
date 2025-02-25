@@ -25,9 +25,5 @@
     "rootDir": "./src",
     "baseUrl": "."
   },
-  "include": ["./src/**/*.ts"],
-  "exclude": [
-    "./fixtures/**/*.*",
-    "./_fixtures/**/*.*"
-  ]
+  "include": ["./src/**/*.ts"]
 }
