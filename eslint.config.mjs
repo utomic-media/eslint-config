@@ -7,5 +7,5 @@ import { config } from '@utomic-media/eslint-config';
 export default [
   ...config.base,
   ...config.typescript,
-  ...config.vue
+  ...config.vue,
 ];
