@@ -33,9 +33,6 @@ importers:
       '@types/node':
         specifier: ^22.13.5
         version: 22.13.5
-      '@utomic-media/eslint-config':
-        specifier: ./
-        version: 'link:'
       eslint:
         specifier: ^9.21.0
         version: 9.21.0
