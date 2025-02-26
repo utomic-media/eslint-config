@@ -68,7 +68,6 @@ const baseConfig: ESLintConfig = [
       ],
       'import/newline-after-import': ['error', { count: 1, considerComments: true }],
     },
-    ignores: ['**/node_modules/', '**/dist/', '**/build/'],
   }
 ];
 
