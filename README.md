@@ -36,6 +36,24 @@ export default [
 ];
 ```
 
+### Prettier
+In order to use this config in combination with prettier, make sure to install `eslint-config-prettier` and add it to your config.
+
+```shell
+pnpm i -D eslint-config-prettier
+```
+```js
+import { config, presets } from '@utomic-media/eslint-config';
+
+export default [
+  // Utomic-media eslint configs
+ ...config.base
+
+  // Add your customizations here
+  eslintConfigPrettier,
+];
+```
+
 
 
 ## Requirements
