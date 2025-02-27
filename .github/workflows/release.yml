@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install pnpm 👷🏽‍♂️
         uses: pnpm/action-setup@v3
@@ -50,6 +50,6 @@ jobs:
           generateReleaseNotes: true
 
       - name: Add release to npm 💾 
-        run: pnpm publish --no-git-checks # --no-git-checks as we're not on a branch but a tag!,
+        run: pnpm publish --no-git-checks # --no-git-checks as we're not on a branch but a tag!
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

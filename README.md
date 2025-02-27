@@ -5,7 +5,7 @@ ESLint configurations for Utomic Media projects.
 ## Installation
 
 ```bash
-pnpm i -D @utomic-media/eslint-config
+pnpm i -D eslint-config-utomic-media
 ```
 
 ## Usage

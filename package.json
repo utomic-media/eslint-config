@@ -1,5 +1,5 @@
 {
-  "name": "@utomic-media/eslint-config",
+  "name": "eslint-config-utomic-media",
   "version": "1.0.1",
   "type": "module",
   "description": "ESLint configurations for Utomic Media projects",
@@ -38,10 +38,6 @@
     "url": "https://github.com/utomic-media/eslint-config.git"
   },
   "homepage": "https://github.com/utomic-media/eslint-config#readme",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "@eslint/js": "^9.21.0",
     "@stylistic/eslint-plugin": "^4.0.1",
