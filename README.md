@@ -36,6 +36,45 @@ export default [
 ];
 ```
 
+### Prettier
+In order to use this config in combination with prettier:
+
+**1. Install eslint-config-prettier:**
+
+```shell
+pnpm i -D eslint-config-prettier
+```
+
+**2. Add it to your config:**
+```js
+import { config, presets } from '@utomic-media/eslint-config';
+
+export default [
+  // Utomic-media eslint configs
+ ...config.base
+
+  // Add your customizations here
+  eslintConfigPrettier,
+];
+```
+
+## Git Hooks
+We can run ESLint (an Prettier) as a pre-commit hook. This makes sure all commits are linted (and formatted) automatically.
+
+**1. Install husky and lint-staged**
+```shell
+pnpm i -D husky lint-staged
+```
+**2. Create the lintstaged config file:** `lintstagedrc.json`
+```json5
+{
+  "**/*": ["eslint --fix", "prettier . --check"]
+}
+```
+**3. Create a husky config file:** `.husky/pre-commit`
+``` shell
+pnpm exec lint-staged
+```
 
 
 ## Requirements
