@@ -55,7 +55,8 @@ const baseConfig: ESLintConfig = [
         { blankLine: 'any', prev: ['export', 'import'], next: ['export', 'import'] },
       ],
       // Require empty line between class members
-      '@stylistic/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+      '@stylistic/lines-between-class-members': ['error', 'always'],
+      '@stylistic/spaced-comment': ['error', 'always'],
       'import/first': 'error',
       'import/no-duplicates': 'error',
       'import/no-mutable-exports': 'error',

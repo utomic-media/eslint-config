@@ -12,3 +12,14 @@ const _testObj = {
 
 const _myString = 'string';
 const _myString2 = 'string2';
+
+// This is my class
+class _MyClass { 
+  constructor() {
+    console.log('MyClass');
+  }
+  
+  someMethod() {
+    console.log('This is a method inside _MyClass');
+  }
+}
