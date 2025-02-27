@@ -70,7 +70,7 @@ pnpm i -D husky lint-staged
 **2. Create the lintstaged config file:** `lintstagedrc.json`
 ```json5
 {
-  "**/*": ["eslint --fix", "prettier . --check"]
+  "**/*": ["eslint --cache .", "prettier --check --cache ."]
 }
 ```
 **3. Create a husky config file:** `.husky/pre-commit`
