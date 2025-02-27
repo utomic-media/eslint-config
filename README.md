@@ -54,6 +54,8 @@ export default [
  ...config.base
 
   // Add your customizations here
+
+  // Last: eslint config
   eslintConfigPrettier,
 ];
 ```
