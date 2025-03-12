@@ -20,6 +20,9 @@ Create an `eslint.config.mjs` file in your project root:
 import { config, presets } from '@utomic-media/eslint-config';
 
 export default [
+  // Utomic-media eslint configs
+  // @see https://github.com/utomic-media/eslint-config
+
   // Use basic configs
   // This is more granular and allows to compose each rule-set
   ...config.base, // Base-config (JavaScript)
@@ -51,6 +54,7 @@ import { config, presets } from '@utomic-media/eslint-config';
 
 export default [
   // Utomic-media eslint configs
+  // @see https://github.com/utomic-media/eslint-config
  ...config.base
 
   // Add your customizations here
