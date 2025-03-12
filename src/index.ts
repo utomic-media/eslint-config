@@ -15,19 +15,23 @@ export const config: Record<string, ESLintConfig> = {
 
 export const presets = {
   base: [
-    ...baseConfig
+    ...baseConfig,
+    ...ignoresConfig,
   ],
 
   typescript: [
     ...baseConfig,
     ...typescriptConfig,
+    ...ignoresConfig,
   ],
 
   vue: [
     ...baseConfig,
     ...typescriptConfig,
     ...vueConfig,
+    ...ignoresConfig,
   ],
+
   all: Object.values(config).flat(),
 };
 
