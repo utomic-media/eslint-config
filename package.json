@@ -23,6 +23,8 @@
     "build": "tsup",
     "dev:inspector": "npx @eslint/config-inspector --config eslint.config.mjs",
     "dev": "tsup --watch",
+    "lint": "eslint --fix --cache .",
+    "lint:check": "eslint --cache .",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [
