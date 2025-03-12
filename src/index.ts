@@ -12,7 +12,6 @@ export const config: Record<string, ESLintConfig> = {
   ignores: ignoresConfig,
 };
 
-export const all: ESLintConfig = Object.values(config).flat();
 
 export const presets = {
   base: [
@@ -29,5 +28,6 @@ export const presets = {
     ...typescriptConfig,
     ...vueConfig,
   ],
+  all: Object.values(config).flat(),
 };
 
