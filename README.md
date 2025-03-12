@@ -20,6 +20,9 @@ Create an `eslint.config.mjs` file in your project root:
 import { config, presets } from '@utomic-media/eslint-config';
 
 export default [
+  // Utomic-media eslint configs
+  // @see https://github.com/utomic-media/eslint-config
+
   // Use basic configs
   // This is more granular and allows to compose each rule-set
   ...config.base, // Base-config (JavaScript)
@@ -51,6 +54,7 @@ import { config, presets } from '@utomic-media/eslint-config';
 
 export default [
   // Utomic-media eslint configs
+  // @see https://github.com/utomic-media/eslint-config
  ...config.base
 
   // Add your customizations here
@@ -70,7 +74,7 @@ pnpm i -D husky lint-staged
 **2. Create the lintstaged config file:** `lintstagedrc.json`
 ```json5
 {
-  "**/*": ["eslint --fix", "prettier . --check"]
+  "**/*": ["eslint --cache .", "prettier --check --cache ."]
 }
 ```
 **3. Create a husky config file:** `.husky/pre-commit`
