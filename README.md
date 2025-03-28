@@ -51,6 +51,7 @@ pnpm i -D eslint-config-prettier
 **2. Add it to your config:**
 ```js
 import { config, presets } from '@utomic-media/eslint-config';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
   // Utomic-media eslint configs
